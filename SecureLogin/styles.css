@@ -1,0 +1,263 @@
+:root {
+    color-scheme: only light;
+    --navy: #10294b;
+    --navy-hover: #183b69;
+    --gold: #b08a2e;
+    --gold-light: #e6c66b;
+}
+
+html {
+    color-scheme: only light !important;
+    min-height: 100%;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color-scheme: only light !important;
+    color: var(--navy) !important;
+    font-family: Arial, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    html,
+    body {
+        color-scheme: only light !important;
+        background: #ffffff !important;
+        background-color: #ffffff !important;
+        background-image: none !important;
+        color: var(--navy) !important;
+    }
+}
+
+body * {
+    color: var(--navy) !important;
+}
+
+header,
+main,
+footer,
+aside,
+section,
+.page-shell,
+.page-card,
+.card,
+.section,
+.container,
+.verification-container,
+.login-container,
+form {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+.summary-cards > .card {
+    background: #183b69 !important;
+    background-color: #183b69 !important;
+    color: #000000 !important;
+}
+
+.summary-cards > .card h3 {
+    color: var(--gold-light) !important;
+}
+
+.summary-cards > .card p {
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: #ffffff !important;
+    color: #000000 !important;
+}
+
+.product-cards > .card {
+    background: var(--navy) !important;
+    background-color: var(--navy) !important;
+    color: #000000 !important;
+}
+
+.product-cards > .card h3 {
+    color: var(--gold-light) !important;
+}
+
+.product-cards > .card p {
+    padding: 10px 12px;
+    border-radius: 6px;
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: #000000 !important;
+}
+
+input,
+select,
+textarea,
+.page-card input,
+.otp-input {
+    background: #f3f6fa !important;
+    background-color: #f3f6fa !important;
+    color: var(--navy) !important;
+}
+
+.brand,
+.brand-name,
+.page-brand,
+.page-card .page-brand,
+.brand-highlight,
+.welcome h1,
+.card h3,
+aside h3 {
+    color: var(--gold) !important;
+}
+
+.gold,
+.price {
+    color: var(--gold) !important;
+}
+
+.card p,
+.welcome p {
+    color: var(--navy) !important;
+}
+
+.page-card button,
+.login-button,
+.verify-button,
+.action,
+.button {
+    background: var(--navy) !important;
+    background-color: var(--navy) !important;
+    color: var(--gold-light) !important;
+}
+
+.page-card button:hover,
+.login-button:hover,
+.verify-button:hover,
+.action:hover,
+.button:hover {
+    background: var(--navy-hover) !important;
+    background-color: var(--navy-hover) !important;
+}
+
+.logout {
+    background: #ffffff !important;
+    background-color: #ffffff !important;
+    color: var(--navy) !important;
+}
+
+.page-shell {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+}
+
+.page-card {
+    width: min(100%, 620px);
+    padding: 40px;
+    background: #ffffff !important;
+    border-radius: 16px;
+    box-shadow: 0 12px 36px rgba(16, 41, 75, 0.07);
+}
+
+.page-card h1,
+.page-card h2 {
+    margin-top: 0;
+    font-family: Georgia, serif;
+}
+
+.page-card .page-brand {
+    color: var(--gold);
+}
+
+.page-brand {
+    margin-bottom: 8px;
+    color: var(--gold);
+    font-family: Georgia, serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.brand-tagline {
+    margin: 0 0 28px;
+    color: var(--navy);
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.page-card label {
+    display: block;
+    margin: 16px 0 8px;
+    font-weight: bold;
+}
+
+.page-card input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 0;
+    border-radius: 7px;
+    background: #f3f6fa !important;
+    color: var(--navy) !important;
+    font: inherit;
+}
+
+.page-card input:focus {
+    outline: 2px solid rgba(176, 138, 46, 0.18);
+}
+
+.page-card button {
+    padding: 12px 20px;
+    border: 0;
+    border-radius: 7px;
+    background: var(--navy) !important;
+    color: var(--gold-light) !important;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.page-card button:hover {
+    background: var(--navy-hover);
+}
+
+.page-card a {
+    font-weight: bold;
+}
+
+.page-message {
+    padding: 12px;
+    border-radius: 7px;
+    background: #f3f6fa !important;
+    color: var(--navy) !important;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-wrap: anywhere;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px;
+    text-align: left;
+}
+
+.data-table th {
+    background: #f3f6fa;
+}
+
+@media (max-width: 480px) {
+    .page-card {
+        padding: 28px 20px;
+    }
+}
